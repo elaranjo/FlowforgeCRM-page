@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { SiTelegram } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 import { useState, useEffect } from "react";
 import logoImage from "@assets/generated_images/flowforge_logo_icon.png";
 
-const TELEGRAM_BOT_URL = "https://t.me/laranjo_cacete_de_bot";
+const WHATSAPP_URL = "https://wa.me/5531984911810";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -78,11 +78,12 @@ export default function Header() {
             </button>
             <Button
               asChild
-              data-testid="button-telegram-cta"
+              className="bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#20BD5A]"
+              data-testid="button-whatsapp-cta"
             >
-              <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
-                <SiTelegram className="h-4 w-4 mr-2" />
-                Experimentar no Telegram
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <SiWhatsapp className="h-4 w-4 mr-2" />
+                Fale Conosco
               </a>
             </Button>
           </nav>
@@ -119,12 +120,12 @@ export default function Header() {
             </button>
             <Button
               asChild
-              className="w-full"
-              data-testid="button-telegram-cta-mobile"
+              className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#20BD5A]"
+              data-testid="button-whatsapp-cta-mobile"
             >
-              <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
-                <SiTelegram className="h-4 w-4 mr-2" />
-                Experimentar no Telegram
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <SiWhatsapp className="h-4 w-4 mr-2" />
+                Fale Conosco
               </a>
             </Button>
           </nav>
