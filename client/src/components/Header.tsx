@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Bot, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { SiTelegram } from "react-icons/si";
 import { useState, useEffect } from "react";
+import logoImage from "@assets/generated_images/flowforge_logo_icon.png";
 
 const TELEGRAM_BOT_URL = "https://t.me/laranjo_cacete_de_bot";
 
@@ -29,16 +30,25 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border"
+          ? "bg-background/95 backdrop-blur-lg border-b border-border"
           : "bg-transparent"
       }`}
       data-testid="header"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="flex items-center gap-2">
-            <Bot className="h-8 w-8 text-primary" />
-            <span className="text-xl font-semibold" data-testid="text-logo">
+          <div className="flex items-center gap-3">
+            <img 
+              src={logoImage} 
+              alt="Flowforge Logo" 
+              className="h-10 w-10 rounded-md"
+            />
+            <span 
+              className={`text-xl font-semibold transition-colors duration-300 ${
+                isScrolled ? "text-foreground" : "text-white"
+              }`}
+              data-testid="text-logo"
+            >
               Flowforge
             </span>
           </div>
@@ -46,14 +56,22 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("features")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className={`text-sm transition-colors ${
+                isScrolled 
+                  ? "text-muted-foreground hover:text-foreground" 
+                  : "text-white/80 hover:text-white"
+              }`}
               data-testid="link-features"
             >
               Features
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className={`text-sm transition-colors ${
+                isScrolled 
+                  ? "text-muted-foreground hover:text-foreground" 
+                  : "text-white/80 hover:text-white"
+              }`}
               data-testid="link-pricing"
             >
               Pricing
@@ -72,7 +90,7 @@ export default function Header() {
           <Button
             size="icon"
             variant="ghost"
-            className="md:hidden"
+            className={`md:hidden ${!isScrolled ? "text-white hover:bg-white/10" : ""}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
             aria-label="Toggle menu"
