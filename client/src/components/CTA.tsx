@@ -16,12 +16,12 @@ export default function CTA() {
           className="text-3xl md:text-4xl font-semibold mb-4"
           data-testid="text-cta-title"
         >
-          Ready to transform your customer support?
+          Pronto para transformar seu atendimento?
         </h2>
 
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-          Join thousands of businesses using Flowforge to automate customer
-          interactions and grow their revenue.
+          Junte-se a milhares de empresas que usam o Flowforge para automatizar
+          interações com clientes e aumentar sua receita.
         </p>
 
         <Button
@@ -31,7 +31,7 @@ export default function CTA() {
         >
           <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
             <SiTelegram className="h-5 w-5 mr-2" />
-            Start Chatting Now
+            Começar Agora
             <ArrowRight className="h-4 w-4 ml-2" />
           </a>
         </Button>

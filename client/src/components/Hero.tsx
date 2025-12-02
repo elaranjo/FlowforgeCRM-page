@@ -20,17 +20,17 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
           <SiTelegram className="h-4 w-4 text-[#0088cc]" />
-          <span className="text-sm text-white/90">Available on Telegram</span>
+          <span className="text-sm text-white/90">Disponível no Telegram</span>
         </div>
 
         <h1
           className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6"
           data-testid="text-hero-title"
         >
-          Your AI-Powered
+          Seu Assistente Virtual
           <br />
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Bot Secretary
+            Inteligente
           </span>
         </h1>
 
@@ -38,8 +38,8 @@ export default function Hero() {
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10"
           data-testid="text-hero-subtitle"
         >
-          Automate customer support, manage leads with integrated CRM, and build
-          custom workflows—all through a simple Telegram bot.
+          Automatize o atendimento ao cliente, gerencie leads com CRM integrado e 
+          crie fluxos de trabalho personalizados—tudo através de um bot no Telegram.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -51,7 +51,7 @@ export default function Hero() {
           >
             <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
               <SiTelegram className="h-5 w-5 mr-2 text-[#0088cc]" />
-              Chat with Flowforge Bot
+              Conversar com o Bot
               <ArrowRight className="h-4 w-4 ml-2" />
             </a>
           </Button>

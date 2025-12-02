@@ -63,7 +63,7 @@ export default function Header() {
               }`}
               data-testid="link-features"
             >
-              Features
+              Recursos
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
@@ -74,7 +74,7 @@ export default function Header() {
               }`}
               data-testid="link-pricing"
             >
-              Pricing
+              Planos
             </button>
             <Button
               asChild
@@ -82,7 +82,7 @@ export default function Header() {
             >
               <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
                 <SiTelegram className="h-4 w-4 mr-2" />
-                Try on Telegram
+                Experimentar no Telegram
               </a>
             </Button>
           </nav>
@@ -93,7 +93,7 @@ export default function Header() {
             className={`md:hidden ${!isScrolled ? "text-white hover:bg-white/10" : ""}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
-            aria-label="Toggle menu"
+            aria-label="Abrir menu"
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -108,14 +108,14 @@ export default function Header() {
               className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left py-2"
               data-testid="link-features-mobile"
             >
-              Features
+              Recursos
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left py-2"
               data-testid="link-pricing-mobile"
             >
-              Pricing
+              Planos
             </button>
             <Button
               asChild
@@ -124,7 +124,7 @@ export default function Header() {
             >
               <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
                 <SiTelegram className="h-4 w-4 mr-2" />
-                Try on Telegram
+                Experimentar no Telegram
               </a>
             </Button>
           </nav>

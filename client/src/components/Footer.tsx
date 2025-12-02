@@ -30,7 +30,7 @@ export default function Footer() {
               data-testid="link-footer-telegram"
             >
               <SiTelegram className="h-4 w-4" />
-              <span>Telegram Bot</span>
+              <span>Bot no Telegram</span>
             </a>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
             className="text-sm text-muted-foreground"
             data-testid="text-copyright"
           >
-            {currentYear} Flowforge. All rights reserved.
+            {currentYear} Flowforge. Todos os direitos reservados.
           </p>
         </div>
       </div>

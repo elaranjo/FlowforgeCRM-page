@@ -8,51 +8,51 @@ const TELEGRAM_BOT_URL = "https://t.me/laranjo_cacete_de_bot";
 
 const plans = [
   {
-    name: "Essential",
-    tagline: "Perfect for getting started",
-    price: "$29",
-    period: "/month",
+    name: "Essencial",
+    tagline: "Perfeito para começar",
+    price: "R$99",
+    period: "/mês",
     features: [
-      "Easy chatbot setup",
-      "Customer interaction tracking",
-      "Basic analytics dashboard",
-      "Up to 1,000 messages/month",
-      "Email support",
-      "1 Telegram bot",
+      "Chatbot fácil de configurar",
+      "Rastreamento de interações",
+      "Painel de análises básico",
+      "Até 1.000 mensagens/mês",
+      "Suporte por email",
+      "1 bot no Telegram",
     ],
     highlighted: false,
   },
   {
     name: "Pro",
-    tagline: "For growing businesses",
-    price: "$79",
-    period: "/month",
+    tagline: "Para negócios em crescimento",
+    price: "R$249",
+    period: "/mês",
     features: [
-      "Everything in Essential",
-      "Full CRM integration",
-      "Lead management system",
-      "Customer segmentation",
-      "Advanced analytics",
-      "Up to 10,000 messages/month",
-      "Priority support",
-      "3 Telegram bots",
+      "Tudo do Essencial",
+      "CRM completo integrado",
+      "Sistema de gestão de leads",
+      "Segmentação de clientes",
+      "Análises avançadas",
+      "Até 10.000 mensagens/mês",
+      "Suporte prioritário",
+      "3 bots no Telegram",
     ],
     highlighted: true,
   },
   {
     name: "Enterprise",
-    tagline: "For large organizations",
-    price: "Custom",
+    tagline: "Para grandes organizações",
+    price: "Sob consulta",
     period: "",
     features: [
-      "Everything in Pro",
-      "Custom workflow builder",
-      "Advanced bot automation",
-      "API access",
-      "Unlimited messages",
-      "Dedicated account manager",
-      "Custom integrations",
-      "SLA guarantee",
+      "Tudo do Pro",
+      "Construtor de fluxos personalizados",
+      "Automação avançada de bots",
+      "Acesso à API",
+      "Mensagens ilimitadas",
+      "Gerente de conta dedicado",
+      "Integrações personalizadas",
+      "Garantia de SLA",
     ],
     highlighted: false,
   },
@@ -64,17 +64,17 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium uppercase tracking-wide text-primary mb-4 block">
-            Pricing
+            Planos
           </span>
           <h2
             className="text-3xl md:text-4xl font-semibold mb-4"
             data-testid="text-pricing-title"
           >
-            Simple, transparent pricing
+            Preços simples e transparentes
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that best fits your business. All plans include access
-            to our Telegram bot platform.
+            Escolha o plano que melhor se adapta ao seu negócio. Todos os planos 
+            incluem acesso à nossa plataforma de bot no Telegram.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function Pricing() {
                   className="absolute -top-3 left-1/2 -translate-x-1/2"
                   data-testid="badge-popular"
                 >
-                  Most Popular
+                  Mais Popular
                 </Badge>
               )}
 
@@ -128,7 +128,7 @@ export default function Pricing() {
               >
                 <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
                   <SiTelegram className="h-4 w-4 mr-2" />
-                  Start on Telegram
+                  Começar no Telegram
                 </a>
               </Button>
             </Card>

@@ -4,39 +4,39 @@ import { Bot, Users, GitBranch, Zap, MessageCircle, Shield } from "lucide-react"
 const features = [
   {
     icon: Bot,
-    title: "Smart Chatbot",
+    title: "Chatbot Inteligente",
     description:
-      "Intelligent conversational AI that handles customer inquiries 24/7 with natural language understanding.",
+      "IA conversacional que atende seus clientes 24/7 com compreensão de linguagem natural.",
   },
   {
     icon: Users,
-    title: "Integrated CRM",
+    title: "CRM Integrado",
     description:
-      "Track customer interactions, manage leads, and build lasting relationships from one dashboard.",
+      "Acompanhe interações, gerencie leads e construa relacionamentos duradouros em um só lugar.",
   },
   {
     icon: GitBranch,
-    title: "Custom Workflows",
+    title: "Fluxos Personalizados",
     description:
-      "Design automated workflows tailored to your business needs with our visual builder.",
+      "Crie automações sob medida para seu negócio com nosso construtor visual de fluxos.",
   },
   {
     icon: MessageCircle,
-    title: "Multi-Channel Support",
+    title: "Suporte Multicanal",
     description:
-      "Connect with customers on Telegram and expand to other platforms seamlessly.",
+      "Conecte-se com clientes no Telegram e expanda para outras plataformas facilmente.",
   },
   {
     icon: Zap,
-    title: "Instant Responses",
+    title: "Respostas Instantâneas",
     description:
-      "Lightning-fast replies ensure your customers never wait, improving satisfaction scores.",
+      "Respostas rápidas garantem que seus clientes nunca esperem, melhorando a satisfação.",
   },
   {
     icon: Shield,
-    title: "Secure & Reliable",
+    title: "Seguro e Confiável",
     description:
-      "Enterprise-grade security with 99.9% uptime to keep your business running smoothly.",
+      "Segurança de nível empresarial com 99.9% de disponibilidade para seu negócio.",
   },
 ];
 
@@ -46,17 +46,17 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium uppercase tracking-wide text-primary mb-4 block">
-            Features
+            Recursos
           </span>
           <h2
             className="text-3xl md:text-4xl font-semibold mb-4"
             data-testid="text-features-title"
           >
-            Everything you need to scale support
+            Tudo que você precisa para escalar o suporte
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From simple chatbot interactions to complex workflow automation,
-            Flowforge adapts to your business needs.
+            De interações simples com chatbot até automação complexa de fluxos,
+            o Flowforge se adapta às necessidades do seu negócio.
           </p>
         </div>
 
