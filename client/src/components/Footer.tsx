@@ -13,11 +13,11 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <img 
               src={logoImage} 
-              alt="Flowforge Logo" 
+              alt="Ciberforge Logo" 
               className="h-8 w-8 rounded-md"
             />
             <span className="font-semibold" data-testid="text-footer-logo">
-              Flowforge
+              Ciberforge
             </span>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
             className="text-sm text-muted-foreground"
             data-testid="text-copyright"
           >
-            {currentYear} Flowforge. Todos os direitos reservados.
+            {currentYear} Ciberforge. Todos os direitos reservados.
           </p>
         </div>
       </div>

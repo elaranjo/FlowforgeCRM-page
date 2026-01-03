@@ -40,7 +40,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <img 
               src={logoImage} 
-              alt="Flowforge Logo" 
+              alt="Ciberforge Logo" 
               className="h-10 w-10 rounded-md"
             />
             <span 
@@ -49,7 +49,7 @@ export default function Header() {
               }`}
               data-testid="text-logo"
             >
-              Flowforge
+              Ciberforge
             </span>
           </div>
 

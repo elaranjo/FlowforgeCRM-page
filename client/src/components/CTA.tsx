@@ -21,7 +21,7 @@ export default function CTA() {
         </h2>
 
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-          Junte-se a milhares de empresas que usam o Flowforge para automatizar
+          Junte-se a milhares de empresas que usam o Ciberforge para automatizar
           interações com clientes e aumentar sua receita.
         </p>
 

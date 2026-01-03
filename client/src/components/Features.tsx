@@ -56,7 +56,7 @@ export default function Features() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             De interações simples com chatbot até automação complexa de fluxos,
-            o Flowforge se adapta às necessidades do seu negócio.
+            o Ciberforge se adapta às necessidades do seu negócio.
           </p>
         </div>
 
