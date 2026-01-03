@@ -35,10 +35,10 @@ export default function Hero() {
           className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6"
           data-testid="text-hero-title"
         >
-          Seu Assistente Virtual
+          CRM inteligente para
           <br />
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Inteligente
+            negócios que não param
           </span>
         </h1>
 
