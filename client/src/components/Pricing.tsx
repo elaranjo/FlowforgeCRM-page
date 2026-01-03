@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
-import { SiTelegram, SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 
-const TELEGRAM_BOT_URL = "https://t.me/laranjo_cacete_de_bot";
 const WHATSAPP_URL = "https://wa.me/5531984911810";
 
 const plans = [
@@ -19,7 +18,7 @@ const plans = [
       "Painel de análises básico",
       "Até 1.000 mensagens/mês",
       "Suporte por email",
-      "1 bot no Telegram",
+      "1 bot",
     ],
     highlighted: false,
   },
@@ -36,7 +35,7 @@ const plans = [
       "Análises avançadas",
       "Até 10.000 mensagens/mês",
       "Suporte prioritário",
-      "3 bots no Telegram",
+      "3 bots",
     ],
     highlighted: true,
   },
@@ -121,29 +120,16 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <div className="flex flex-col gap-3">
-                <Button
-                  asChild
-                  className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#20BD5A]"
-                  data-testid={`button-pricing-whatsapp-${plan.name.toLowerCase()}`}
-                >
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    <SiWhatsapp className="h-4 w-4 mr-2" />
-                    WhatsApp
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full"
-                  data-testid={`button-pricing-telegram-${plan.name.toLowerCase()}`}
-                >
-                  <a href={TELEGRAM_BOT_URL} target="_blank" rel="noopener noreferrer">
-                    <SiTelegram className="h-4 w-4 mr-2" />
-                    Telegram
-                  </a>
-                </Button>
-              </div>
+              <Button
+                asChild
+                className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white border-[#20BD5A]"
+                data-testid={`button-pricing-whatsapp-${plan.name.toLowerCase()}`}
+              >
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  <SiWhatsapp className="h-4 w-4 mr-2" />
+                  Falar no WhatsApp
+                </a>
+              </Button>
             </Card>
           ))}
         </div>

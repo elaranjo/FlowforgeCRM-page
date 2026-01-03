@@ -1,7 +1,4 @@
-import { SiTelegram } from "react-icons/si";
 import logoImage from "@assets/generated_images/flowforge_logo_icon.png";
-
-const TELEGRAM_BOT_URL = "https://t.me/laranjo_cacete_de_bot";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,19 +16,6 @@ export default function Footer() {
             <span className="font-semibold" data-testid="text-footer-logo">
               Ciberforge
             </span>
-          </div>
-
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a
-              href={TELEGRAM_BOT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-foreground transition-colors"
-              data-testid="link-footer-telegram"
-            >
-              <SiTelegram className="h-4 w-4" />
-              <span>Bot no Telegram</span>
-            </a>
           </div>
 
           <p

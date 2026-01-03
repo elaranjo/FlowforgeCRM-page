@@ -24,7 +24,7 @@ const features = [
     icon: MessageCircle,
     title: "Suporte Multicanal",
     description:
-      "Conecte-se com clientes no Telegram e expanda para outras plataformas facilmente.",
+      "Conecte-se com clientes em múltiplas plataformas e expanda seu alcance facilmente.",
   },
   {
     icon: Zap,
